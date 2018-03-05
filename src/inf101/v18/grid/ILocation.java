@@ -104,4 +104,5 @@ public interface ILocation extends IPosition {
 	 */
 	List<ILocation> gridLineTo(ILocation other);
 
+
 }

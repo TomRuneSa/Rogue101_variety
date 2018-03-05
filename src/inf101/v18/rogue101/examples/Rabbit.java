@@ -6,6 +6,7 @@ import java.util.List;
 
 import inf101.v18.gfx.gfxmode.ITurtle;
 import inf101.v18.grid.GridDirection;
+import inf101.v18.grid.ILocation;
 import inf101.v18.rogue101.game.IGame;
 import inf101.v18.rogue101.objects.IItem;
 import inf101.v18.rogue101.objects.INonPlayer;
@@ -37,16 +38,31 @@ public class Rabbit implements INonPlayer {
 			}
 		}
 		// TODO: prøv forskjellige varianter her
-		List<GridDirection> possibleMoves = new ArrayList<>();
-		for (GridDirection dir : GridDirection.FOUR_DIRECTIONS) {
-			if (game.canGo(dir))
-				possibleMoves.add(dir);
-		}
-		if (!possibleMoves.isEmpty()) {
+
+		List<GridDirection> possibleMoves = game.getPossibleMoves();
+		GridDirection carrot = null;
+		if(!possibleMoves.isEmpty()){
 			Collections.shuffle(possibleMoves);
-			game.move(possibleMoves.get(0));
+			for(GridDirection dir : possibleMoves){
+				ILocation loc = game.getLocation(dir);
+				for(IItem item : game.getMap().getItems(loc)){
+					if(item instanceof Carrot){
+						carrot = dir;
+					}
+				}
+			}
+			if(carrot!= null){
+				game.move(carrot);
+			}else{
+				game.move(possibleMoves.get(0));
+			}
 		}
-	}
+
+
+
+
+}
+
 
 	@Override
 	public boolean draw(ITurtle painter, double w, double h) {
@@ -75,7 +91,7 @@ public class Rabbit implements INonPlayer {
 
 	@Override
 	public int getMaxHealth() {
-		return 10;
+		return 50;
 	}
 
 	@Override

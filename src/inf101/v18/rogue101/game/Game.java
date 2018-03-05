@@ -19,6 +19,7 @@ import inf101.v18.grid.ILocation;
 import inf101.v18.rogue101.Main;
 import inf101.v18.rogue101.examples.Carrot;
 import inf101.v18.rogue101.examples.Rabbit;
+import inf101.v18.rogue101.examples.candy;
 import inf101.v18.rogue101.map.GameMap;
 import inf101.v18.rogue101.map.IGameMap;
 import inf101.v18.rogue101.map.IMapView;
@@ -147,6 +148,14 @@ public class Game implements IGame {
 				// first collect all the actors:
 				beginTurn();
 			}
+			if(random.nextInt(100)<99){
+				int xPos = random.nextInt(getWidth());
+				int yPos = random.nextInt(getHeight());
+				ILocation randomCarrot = map.getLocation(xPos, yPos);
+				if(map.canGo(randomCarrot)){
+					map.add(randomCarrot, new Carrot());
+				}
+			}
 
 			// process actors one by one; for the IPlayer, we return and wait for keypresses
 			// Possible TODO: for INonPlayer, we could also return early (returning
@@ -255,6 +264,8 @@ public class Game implements IGame {
 			return new Carrot();
 		case "@":
 			// TODO: add Player
+			case "K":
+				return new candy();
 		case " ":
 			return null;
 		default:
@@ -356,8 +367,13 @@ public class Game implements IGame {
 
 	@Override
 	public List<GridDirection> getPossibleMoves() {
-		// TODO
-		throw new UnsupportedOperationException();
+		List<GridDirection> possibleMoves = new ArrayList<>();
+		for(GridDirection dir : GridDirection.EIGHT_DIRECTIONS){
+			if(canGo(dir)){
+				possibleMoves.add(dir);
+			}
+		}
+		return possibleMoves;
 	}
 
 	@Override

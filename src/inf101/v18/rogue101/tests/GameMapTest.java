@@ -1,5 +1,6 @@
 package inf101.v18.rogue101.tests;
 
+import static junit.framework.Assert.fail;
 import static org.junit.Assert.*;
 
 import org.junit.jupiter.api.Test;
