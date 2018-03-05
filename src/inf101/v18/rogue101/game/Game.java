@@ -148,7 +148,7 @@ public class Game implements IGame {
 				// first collect all the actors:
 				beginTurn();
 			}
-			if(random.nextInt(100)<99){
+			if(random.nextInt(1000)<999){
 				int xPos = random.nextInt(getWidth());
 				int yPos = random.nextInt(getHeight());
 				ILocation randomCarrot = map.getLocation(xPos, yPos);
