@@ -24,12 +24,7 @@ import inf101.v18.rogue101.map.GameMap;
 import inf101.v18.rogue101.map.IGameMap;
 import inf101.v18.rogue101.map.IMapView;
 import inf101.v18.rogue101.map.MapReader;
-import inf101.v18.rogue101.objects.Dust;
-import inf101.v18.rogue101.objects.IActor;
-import inf101.v18.rogue101.objects.IItem;
-import inf101.v18.rogue101.objects.INonPlayer;
-import inf101.v18.rogue101.objects.IPlayer;
-import inf101.v18.rogue101.objects.Wall;
+import inf101.v18.rogue101.objects.*;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
@@ -263,7 +258,7 @@ public class Game implements IGame {
 		case "C":
 			return new Carrot();
 		case "@":
-			// TODO: add Player
+			return new Player();
 			case "K":
 				return new candy();
 		case " ":

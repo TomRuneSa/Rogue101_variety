@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="412945af-e5a3-4a1e-a99e-601058513eaf" name="Default" comment="" />
+    <list default="true" id="412945af-e5a3-4a1e-a99e-601058513eaf" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/inf101/v18/rogue101/game/Game.java" afterPath="$PROJECT_DIR$/src/inf101/v18/rogue101/game/Game.java" />
+      <change beforePath="$PROJECT_DIR$/src/inf101/v18/rogue101/objects/Player.java" afterPath="$PROJECT_DIR$/src/inf101/v18/rogue101/objects/Player.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,69 +37,70 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/inf101/v18/rogue101/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="164" column="39" lean-forward="true" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="39" />
+            <state relative-caret-position="467">
+              <caret line="260" column="32" lean-forward="false" selection-start-line="260" selection-start-column="32" selection-end-line="260" selection-end-column="32" />
               <folding>
                 <element signature="docComment;field#actors#0;class#Game#0" expanded="false" />
                 <element signature="docComment;field#itemFactories#0;class#Game#0" expanded="false" />
                 <element signature="docComment;field#random#0;class#Game#0" expanded="false" />
                 <element signature="docComment;field#map#0;class#Game#0" expanded="false" />
                 <element signature="method#Game#0;class#Game#0" expanded="false" />
-                <element signature="e#2105#2167#0" expanded="false" />
+                <element signature="e#1885#1947#0" expanded="false" />
                 <element signature="method#Game#1;class#Game#0" expanded="false" />
                 <element signature="method#addItem#1;class#Game#0" expanded="false" />
                 <element signature="method#attack#0;class#Game#0" expanded="false" />
+                <element signature="method#doTurn#0;class#Game#0" expanded="false" />
                 <element signature="docComment;method#beginTurn#0;class#Game#0" expanded="false" />
                 <element signature="method#beginTurn#0;class#Game#0" expanded="false" />
-                <element signature="e#8521#8522#0" expanded="true" />
-                <element signature="e#8566#8567#0" expanded="true" />
+                <element signature="e#8301#8302#0" expanded="true" />
+                <element signature="e#8346#8347#0" expanded="true" />
                 <element signature="method#displayDebug#0;class#Game#0" expanded="false" />
                 <element signature="method#displayMessage#0;class#Game#0" expanded="false" />
                 <element signature="method#displayStatus#0;class#Game#0" expanded="false" />
-                <element signature="e#9879#9880#0" expanded="true" />
-                <element signature="e#9912#9913#0" expanded="true" />
+                <element signature="e#9660#9661#0" expanded="true" />
+                <element signature="e#9693#9694#0" expanded="true" />
                 <element signature="method#drop#0;class#Game#0" expanded="false" />
-                <element signature="e#10126#10127#0" expanded="true" />
-                <element signature="e#10169#10170#0" expanded="true" />
-                <element signature="e#10236#10237#0" expanded="true" />
-                <element signature="e#10281#10282#0" expanded="true" />
-                <element signature="e#10347#10348#0" expanded="true" />
-                <element signature="e#10391#10392#0" expanded="true" />
-                <element signature="e#10429#10430#0" expanded="true" />
-                <element signature="e#10458#10459#0" expanded="true" />
-                <element signature="e#10508#10509#0" expanded="true" />
-                <element signature="e#10551#10552#0" expanded="true" />
-                <element signature="e#10597#10598#0" expanded="true" />
-                <element signature="e#10626#10627#0" expanded="true" />
+                <element signature="e#9907#9908#0" expanded="true" />
+                <element signature="e#9950#9951#0" expanded="true" />
+                <element signature="e#10017#10018#0" expanded="true" />
+                <element signature="e#10062#10063#0" expanded="true" />
+                <element signature="e#10128#10129#0" expanded="true" />
+                <element signature="e#10172#10173#0" expanded="true" />
+                <element signature="e#10210#10211#0" expanded="true" />
+                <element signature="e#10239#10240#0" expanded="true" />
+                <element signature="e#10289#10290#0" expanded="true" />
+                <element signature="e#10332#10333#0" expanded="true" />
+                <element signature="e#10378#10379#0" expanded="true" />
+                <element signature="e#10407#10408#0" expanded="true" />
                 <element signature="docComment;method#getMap#0;class#Game#0" expanded="false" />
-                <element signature="e#11012#11013#0" expanded="true" />
-                <element signature="e#11029#11030#0" expanded="true" />
+                <element signature="e#10793#10794#0" expanded="true" />
+                <element signature="e#10810#10811#0" expanded="true" />
                 <element signature="method#getVisible#0;class#Game#0" expanded="false" />
-                <element signature="e#11524#11525#0" expanded="true" />
-                <element signature="e#11552#11553#0" expanded="true" />
+                <element signature="e#11305#11306#0" expanded="true" />
+                <element signature="e#11333#11334#0" expanded="true" />
                 <element signature="method#keyPressed#0;class#Game#0" expanded="false" />
                 <element signature="method#pickUp#0;class#Game#0" expanded="false" />
-                <element signature="e#12667#12668#0" expanded="true" />
-                <element signature="e#12696#12697#0" expanded="true" />
-                <element signature="e#12739#12740#0" expanded="true" />
-                <element signature="e#12760#12761#0" expanded="true" />
-                <element signature="e#12803#12804#0" expanded="true" />
-                <element signature="e#12824#12825#0" expanded="true" />
+                <element signature="e#12448#12449#0" expanded="true" />
+                <element signature="e#12477#12478#0" expanded="true" />
+                <element signature="e#12520#12521#0" expanded="true" />
+                <element signature="e#12541#12542#0" expanded="true" />
+                <element signature="e#12584#12585#0" expanded="true" />
+                <element signature="e#12605#12606#0" expanded="true" />
                 <element signature="method#getFreeTextAreaBounds#0;class#Game#0" expanded="false" />
                 <element signature="method#clearFreeTextArea#0;class#Game#0" expanded="false" />
                 <element signature="method#clearFreeGraphicsArea#0;class#Game#0" expanded="false" />
                 <element signature="method#getFreeGraphicsAreaBounds#0;class#Game#0" expanded="false" />
-                <element signature="e#13760#13761#0" expanded="true" />
-                <element signature="e#13786#13787#0" expanded="true" />
+                <element signature="e#13541#13542#0" expanded="true" />
+                <element signature="e#13567#13568#0" expanded="true" />
                 <element signature="method#setCurrent#0;class#Game#0" expanded="false" />
                 <element signature="method#setCurrent#1;class#Game#0" expanded="false" />
-                <element signature="e#14246#14247#0" expanded="true" />
-                <element signature="e#14293#14294#0" expanded="true" />
-                <element signature="e#14335#14336#0" expanded="true" />
-                <element signature="e#14355#14356#0" expanded="true" />
+                <element signature="e#14027#14028#0" expanded="true" />
+                <element signature="e#14074#14075#0" expanded="true" />
+                <element signature="e#14116#14117#0" expanded="true" />
+                <element signature="e#14136#14137#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,9 +109,39 @@
       <file leaf-file-name="ExampleItem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/inf101/v18/rogue101/examples/ExampleItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
+            <state relative-caret-position="70">
               <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/inf101/v18/rogue101/objects/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
+                <element signature="e#877#878#0" expanded="true" />
+                <element signature="e#928#929#0" expanded="true" />
+                <element signature="e#952#953#0" expanded="true" />
+                <element signature="e#997#998#0" expanded="true" />
+                <element signature="e#1021#1022#0" expanded="true" />
+                <element signature="e#1068#1069#0" expanded="true" />
+                <element signature="e#1092#1093#0" expanded="true" />
+                <element signature="e#1137#1138#0" expanded="true" />
+                <element signature="e#1164#1165#0" expanded="true" />
+                <element signature="e#1206#1207#0" expanded="true" />
+                <element signature="e#1230#1231#0" expanded="true" />
+                <element signature="e#1277#1278#0" expanded="true" />
+                <element signature="e#1304#1305#0" expanded="true" />
+                <element signature="e#1387#1388#0" expanded="true" />
+                <element signature="e#1411#1412#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,7 +177,7 @@
       <file leaf-file-name="Carrot.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/inf101/v18/rogue101/examples/Carrot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="231">
               <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding>
                 <element signature="e#299#300#0" expanded="true" />
@@ -165,11 +201,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rabbit.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Rabbit.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/inf101/v18/rogue101/examples/Rabbit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="987">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="213">
+              <caret line="33" column="66" lean-forward="false" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1607#1608#0" expanded="true" />
@@ -191,44 +227,6 @@
                 <element signature="e#2066#2067#0" expanded="true" />
                 <element signature="e#2098#2099#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/inf101/v18/rogue101/objects/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#308#309#0" expanded="true" />
-                <element signature="e#335#336#0" expanded="true" />
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#396#397#0" expanded="true" />
-                <element signature="e#440#441#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#512#513#0" expanded="true" />
-                <element signature="e#539#540#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#656#657#0" expanded="true" />
-                <element signature="e#687#688#0" expanded="true" />
-                <element signature="e#729#730#0" expanded="true" />
-                <element signature="e#753#754#0" expanded="true" />
-                <element signature="e#800#801#0" expanded="true" />
-                <element signature="e#826#827#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Wall.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/inf101/v18/rogue101/objects/Wall.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -270,10 +268,11 @@
         <option value="$PROJECT_DIR$/src/inf101/v18/rogue101/Main.java" />
         <option value="$PROJECT_DIR$/src/inf101/v18/rogue101/examples/Carrot.java" />
         <option value="$PROJECT_DIR$/src/inf101/v18/rogue101/examples/candy.java" />
-        <option value="$PROJECT_DIR$/src/inf101/v18/rogue101/objects/Player.java" />
         <option value="$PROJECT_DIR$/src/inf101/v18/rogue101/examples/Rabbit.java" />
         <option value="$PROJECT_DIR$/src/inf101/v18/rogue101/map/maps/level1.txt" />
+        <option value="$PROJECT_DIR$/src/inf101/v18/rogue101/examples/Player.java" />
         <option value="$PROJECT_DIR$/src/inf101/v18/rogue101/game/Game.java" />
+        <option value="$PROJECT_DIR$/src/inf101/v18/rogue101/objects/Player.java" />
       </list>
     </option>
   </component>
@@ -288,6 +287,9 @@
     <option name="y" value="-25" />
     <option name="width" value="1038" />
     <option name="height" value="1038" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -338,16 +340,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="v18" type="462c0819:PsiDirectoryNode" />
               <item name="rogue101" type="462c0819:PsiDirectoryNode" />
-              <item name="map" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inf101.v18.sem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inf101.v18.sem1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="v18" type="462c0819:PsiDirectoryNode" />
-              <item name="rogue101" type="462c0819:PsiDirectoryNode" />
-              <item name="map" type="462c0819:PsiDirectoryNode" />
-              <item name="maps" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="inf101.v18.sem1" type="b2602c69:ProjectViewProjectNode" />
@@ -376,6 +369,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="inf101.v18.rogue101.objects" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -511,7 +509,7 @@
       <updated>1519996574855</updated>
       <workItem from="1519996582375" duration="2081000" />
       <workItem from="1520236214062" duration="28050000" />
-      <workItem from="1520319991142" duration="11000" />
+      <workItem from="1520319991142" duration="2091000" />
     </task>
     <task id="LOCAL-00001" summary="Partially done with part A">
       <created>1520286011694</created>
@@ -566,7 +564,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30142000" />
+    <option name="totallyTimeSpent" value="32222000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -727,22 +725,6 @@
           <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -773,58 +755,59 @@
             <element signature="docComment;field#random#0;class#Game#0" expanded="false" />
             <element signature="docComment;field#map#0;class#Game#0" expanded="false" />
             <element signature="method#Game#0;class#Game#0" expanded="false" />
-            <element signature="e#2105#2167#0" expanded="false" />
+            <element signature="e#1885#1947#0" expanded="false" />
             <element signature="method#Game#1;class#Game#0" expanded="false" />
             <element signature="method#addItem#1;class#Game#0" expanded="false" />
             <element signature="method#attack#0;class#Game#0" expanded="false" />
+            <element signature="method#doTurn#0;class#Game#0" expanded="false" />
             <element signature="docComment;method#beginTurn#0;class#Game#0" expanded="false" />
             <element signature="method#beginTurn#0;class#Game#0" expanded="false" />
-            <element signature="e#8521#8522#0" expanded="true" />
-            <element signature="e#8566#8567#0" expanded="true" />
+            <element signature="e#8301#8302#0" expanded="true" />
+            <element signature="e#8346#8347#0" expanded="true" />
             <element signature="method#displayDebug#0;class#Game#0" expanded="false" />
             <element signature="method#displayMessage#0;class#Game#0" expanded="false" />
             <element signature="method#displayStatus#0;class#Game#0" expanded="false" />
-            <element signature="e#9879#9880#0" expanded="true" />
-            <element signature="e#9912#9913#0" expanded="true" />
+            <element signature="e#9660#9661#0" expanded="true" />
+            <element signature="e#9693#9694#0" expanded="true" />
             <element signature="method#drop#0;class#Game#0" expanded="false" />
-            <element signature="e#10126#10127#0" expanded="true" />
-            <element signature="e#10169#10170#0" expanded="true" />
-            <element signature="e#10236#10237#0" expanded="true" />
-            <element signature="e#10281#10282#0" expanded="true" />
-            <element signature="e#10347#10348#0" expanded="true" />
-            <element signature="e#10391#10392#0" expanded="true" />
-            <element signature="e#10429#10430#0" expanded="true" />
-            <element signature="e#10458#10459#0" expanded="true" />
-            <element signature="e#10508#10509#0" expanded="true" />
-            <element signature="e#10551#10552#0" expanded="true" />
-            <element signature="e#10597#10598#0" expanded="true" />
-            <element signature="e#10626#10627#0" expanded="true" />
+            <element signature="e#9907#9908#0" expanded="true" />
+            <element signature="e#9950#9951#0" expanded="true" />
+            <element signature="e#10017#10018#0" expanded="true" />
+            <element signature="e#10062#10063#0" expanded="true" />
+            <element signature="e#10128#10129#0" expanded="true" />
+            <element signature="e#10172#10173#0" expanded="true" />
+            <element signature="e#10210#10211#0" expanded="true" />
+            <element signature="e#10239#10240#0" expanded="true" />
+            <element signature="e#10289#10290#0" expanded="true" />
+            <element signature="e#10332#10333#0" expanded="true" />
+            <element signature="e#10378#10379#0" expanded="true" />
+            <element signature="e#10407#10408#0" expanded="true" />
             <element signature="docComment;method#getMap#0;class#Game#0" expanded="false" />
-            <element signature="e#11012#11013#0" expanded="true" />
-            <element signature="e#11029#11030#0" expanded="true" />
+            <element signature="e#10793#10794#0" expanded="true" />
+            <element signature="e#10810#10811#0" expanded="true" />
             <element signature="method#getVisible#0;class#Game#0" expanded="false" />
-            <element signature="e#11524#11525#0" expanded="true" />
-            <element signature="e#11552#11553#0" expanded="true" />
+            <element signature="e#11305#11306#0" expanded="true" />
+            <element signature="e#11333#11334#0" expanded="true" />
             <element signature="method#keyPressed#0;class#Game#0" expanded="false" />
             <element signature="method#pickUp#0;class#Game#0" expanded="false" />
-            <element signature="e#12667#12668#0" expanded="true" />
-            <element signature="e#12696#12697#0" expanded="true" />
-            <element signature="e#12739#12740#0" expanded="true" />
-            <element signature="e#12760#12761#0" expanded="true" />
-            <element signature="e#12803#12804#0" expanded="true" />
-            <element signature="e#12824#12825#0" expanded="true" />
+            <element signature="e#12448#12449#0" expanded="true" />
+            <element signature="e#12477#12478#0" expanded="true" />
+            <element signature="e#12520#12521#0" expanded="true" />
+            <element signature="e#12541#12542#0" expanded="true" />
+            <element signature="e#12584#12585#0" expanded="true" />
+            <element signature="e#12605#12606#0" expanded="true" />
             <element signature="method#getFreeTextAreaBounds#0;class#Game#0" expanded="false" />
             <element signature="method#clearFreeTextArea#0;class#Game#0" expanded="false" />
             <element signature="method#clearFreeGraphicsArea#0;class#Game#0" expanded="false" />
             <element signature="method#getFreeGraphicsAreaBounds#0;class#Game#0" expanded="false" />
-            <element signature="e#13760#13761#0" expanded="true" />
-            <element signature="e#13786#13787#0" expanded="true" />
+            <element signature="e#13541#13542#0" expanded="true" />
+            <element signature="e#13567#13568#0" expanded="true" />
             <element signature="method#setCurrent#0;class#Game#0" expanded="false" />
             <element signature="method#setCurrent#1;class#Game#0" expanded="false" />
-            <element signature="e#14246#14247#0" expanded="true" />
-            <element signature="e#14293#14294#0" expanded="true" />
-            <element signature="e#14335#14336#0" expanded="true" />
-            <element signature="e#14355#14356#0" expanded="true" />
+            <element signature="e#14027#14028#0" expanded="true" />
+            <element signature="e#14074#14075#0" expanded="true" />
+            <element signature="e#14116#14117#0" expanded="true" />
+            <element signature="e#14136#14137#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -844,6 +827,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -854,6 +838,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -881,6 +866,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -891,6 +877,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -914,6 +901,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -979,6 +967,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1027,14 +1016,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/inf101/v18/rogue101/examples/ExampleItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/inf101/v18/rogue101/game/IGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5481">
@@ -1049,22 +1030,6 @@
           <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1095,9 +1060,128 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/inf101/v18/grid/ILocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="43" column="26" lean-forward="false" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/inf101/v18/rogue101/map/maps/level1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/inf101/v18/rogue101/examples/ExampleItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/inf101/v18/rogue101/game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="260" column="32" lean-forward="false" selection-start-line="260" selection-start-column="32" selection-end-line="260" selection-end-column="32" />
+          <folding>
+            <element signature="docComment;field#actors#0;class#Game#0" expanded="false" />
+            <element signature="docComment;field#itemFactories#0;class#Game#0" expanded="false" />
+            <element signature="docComment;field#random#0;class#Game#0" expanded="false" />
+            <element signature="docComment;field#map#0;class#Game#0" expanded="false" />
+            <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="e#1885#1947#0" expanded="false" />
+            <element signature="method#Game#1;class#Game#0" expanded="false" />
+            <element signature="method#addItem#1;class#Game#0" expanded="false" />
+            <element signature="method#attack#0;class#Game#0" expanded="false" />
+            <element signature="method#doTurn#0;class#Game#0" expanded="false" />
+            <element signature="docComment;method#beginTurn#0;class#Game#0" expanded="false" />
+            <element signature="method#beginTurn#0;class#Game#0" expanded="false" />
+            <element signature="e#8301#8302#0" expanded="true" />
+            <element signature="e#8346#8347#0" expanded="true" />
+            <element signature="method#displayDebug#0;class#Game#0" expanded="false" />
+            <element signature="method#displayMessage#0;class#Game#0" expanded="false" />
+            <element signature="method#displayStatus#0;class#Game#0" expanded="false" />
+            <element signature="e#9660#9661#0" expanded="true" />
+            <element signature="e#9693#9694#0" expanded="true" />
+            <element signature="method#drop#0;class#Game#0" expanded="false" />
+            <element signature="e#9907#9908#0" expanded="true" />
+            <element signature="e#9950#9951#0" expanded="true" />
+            <element signature="e#10017#10018#0" expanded="true" />
+            <element signature="e#10062#10063#0" expanded="true" />
+            <element signature="e#10128#10129#0" expanded="true" />
+            <element signature="e#10172#10173#0" expanded="true" />
+            <element signature="e#10210#10211#0" expanded="true" />
+            <element signature="e#10239#10240#0" expanded="true" />
+            <element signature="e#10289#10290#0" expanded="true" />
+            <element signature="e#10332#10333#0" expanded="true" />
+            <element signature="e#10378#10379#0" expanded="true" />
+            <element signature="e#10407#10408#0" expanded="true" />
+            <element signature="docComment;method#getMap#0;class#Game#0" expanded="false" />
+            <element signature="e#10793#10794#0" expanded="true" />
+            <element signature="e#10810#10811#0" expanded="true" />
+            <element signature="method#getVisible#0;class#Game#0" expanded="false" />
+            <element signature="e#11305#11306#0" expanded="true" />
+            <element signature="e#11333#11334#0" expanded="true" />
+            <element signature="method#keyPressed#0;class#Game#0" expanded="false" />
+            <element signature="method#pickUp#0;class#Game#0" expanded="false" />
+            <element signature="e#12448#12449#0" expanded="true" />
+            <element signature="e#12477#12478#0" expanded="true" />
+            <element signature="e#12520#12521#0" expanded="true" />
+            <element signature="e#12541#12542#0" expanded="true" />
+            <element signature="e#12584#12585#0" expanded="true" />
+            <element signature="e#12605#12606#0" expanded="true" />
+            <element signature="method#getFreeTextAreaBounds#0;class#Game#0" expanded="false" />
+            <element signature="method#clearFreeTextArea#0;class#Game#0" expanded="false" />
+            <element signature="method#clearFreeGraphicsArea#0;class#Game#0" expanded="false" />
+            <element signature="method#getFreeGraphicsAreaBounds#0;class#Game#0" expanded="false" />
+            <element signature="e#13541#13542#0" expanded="true" />
+            <element signature="e#13567#13568#0" expanded="true" />
+            <element signature="method#setCurrent#0;class#Game#0" expanded="false" />
+            <element signature="method#setCurrent#1;class#Game#0" expanded="false" />
+            <element signature="e#14027#14028#0" expanded="true" />
+            <element signature="e#14074#14075#0" expanded="true" />
+            <element signature="e#14116#14117#0" expanded="true" />
+            <element signature="e#14136#14137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/inf101/v18/rogue101/objects/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#928#929#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1021#1022#0" expanded="true" />
+            <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1092#1093#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1277#1278#0" expanded="true" />
+            <element signature="e#1304#1305#0" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#1411#1412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/inf101/v18/rogue101/examples/Carrot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="231">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="e#299#300#0" expanded="true" />
@@ -1122,8 +1206,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/inf101/v18/rogue101/examples/Rabbit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="987">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="213">
+          <caret line="33" column="66" lean-forward="false" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1607#1608#0" expanded="true" />
@@ -1144,88 +1228,6 @@
             <element signature="e#2025#2026#0" expanded="true" />
             <element signature="e#2066#2067#0" expanded="true" />
             <element signature="e#2098#2099#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/inf101/v18/grid/ILocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="43" column="26" lean-forward="false" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/inf101/v18/rogue101/map/maps/level1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/inf101/v18/rogue101/game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="164" column="39" lean-forward="true" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="39" />
-          <folding>
-            <element signature="docComment;field#actors#0;class#Game#0" expanded="false" />
-            <element signature="docComment;field#itemFactories#0;class#Game#0" expanded="false" />
-            <element signature="docComment;field#random#0;class#Game#0" expanded="false" />
-            <element signature="docComment;field#map#0;class#Game#0" expanded="false" />
-            <element signature="method#Game#0;class#Game#0" expanded="false" />
-            <element signature="e#2105#2167#0" expanded="false" />
-            <element signature="method#Game#1;class#Game#0" expanded="false" />
-            <element signature="method#addItem#1;class#Game#0" expanded="false" />
-            <element signature="method#attack#0;class#Game#0" expanded="false" />
-            <element signature="docComment;method#beginTurn#0;class#Game#0" expanded="false" />
-            <element signature="method#beginTurn#0;class#Game#0" expanded="false" />
-            <element signature="e#8521#8522#0" expanded="true" />
-            <element signature="e#8566#8567#0" expanded="true" />
-            <element signature="method#displayDebug#0;class#Game#0" expanded="false" />
-            <element signature="method#displayMessage#0;class#Game#0" expanded="false" />
-            <element signature="method#displayStatus#0;class#Game#0" expanded="false" />
-            <element signature="e#9879#9880#0" expanded="true" />
-            <element signature="e#9912#9913#0" expanded="true" />
-            <element signature="method#drop#0;class#Game#0" expanded="false" />
-            <element signature="e#10126#10127#0" expanded="true" />
-            <element signature="e#10169#10170#0" expanded="true" />
-            <element signature="e#10236#10237#0" expanded="true" />
-            <element signature="e#10281#10282#0" expanded="true" />
-            <element signature="e#10347#10348#0" expanded="true" />
-            <element signature="e#10391#10392#0" expanded="true" />
-            <element signature="e#10429#10430#0" expanded="true" />
-            <element signature="e#10458#10459#0" expanded="true" />
-            <element signature="e#10508#10509#0" expanded="true" />
-            <element signature="e#10551#10552#0" expanded="true" />
-            <element signature="e#10597#10598#0" expanded="true" />
-            <element signature="e#10626#10627#0" expanded="true" />
-            <element signature="docComment;method#getMap#0;class#Game#0" expanded="false" />
-            <element signature="e#11012#11013#0" expanded="true" />
-            <element signature="e#11029#11030#0" expanded="true" />
-            <element signature="method#getVisible#0;class#Game#0" expanded="false" />
-            <element signature="e#11524#11525#0" expanded="true" />
-            <element signature="e#11552#11553#0" expanded="true" />
-            <element signature="method#keyPressed#0;class#Game#0" expanded="false" />
-            <element signature="method#pickUp#0;class#Game#0" expanded="false" />
-            <element signature="e#12667#12668#0" expanded="true" />
-            <element signature="e#12696#12697#0" expanded="true" />
-            <element signature="e#12739#12740#0" expanded="true" />
-            <element signature="e#12760#12761#0" expanded="true" />
-            <element signature="e#12803#12804#0" expanded="true" />
-            <element signature="e#12824#12825#0" expanded="true" />
-            <element signature="method#getFreeTextAreaBounds#0;class#Game#0" expanded="false" />
-            <element signature="method#clearFreeTextArea#0;class#Game#0" expanded="false" />
-            <element signature="method#clearFreeGraphicsArea#0;class#Game#0" expanded="false" />
-            <element signature="method#getFreeGraphicsAreaBounds#0;class#Game#0" expanded="false" />
-            <element signature="e#13760#13761#0" expanded="true" />
-            <element signature="e#13786#13787#0" expanded="true" />
-            <element signature="method#setCurrent#0;class#Game#0" expanded="false" />
-            <element signature="method#setCurrent#1;class#Game#0" expanded="false" />
-            <element signature="e#14246#14247#0" expanded="true" />
-            <element signature="e#14293#14294#0" expanded="true" />
-            <element signature="e#14335#14336#0" expanded="true" />
-            <element signature="e#14355#14356#0" expanded="true" />
           </folding>
         </state>
       </provider>
