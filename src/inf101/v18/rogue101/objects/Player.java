@@ -7,6 +7,9 @@ import inf101.v18.rogue101.objects.IPlayer;
 import javafx.scene.input.KeyCode;
 
 public class Player implements IPlayer {
+
+
+
     @Override
     public void keyPressed(IGame game, KeyCode key) {
         if (key == KeyCode.LEFT) {
@@ -24,6 +27,16 @@ public class Player implements IPlayer {
 
     }
 
+
+    public void tryToMove(IGame game, GridDirection dir){
+        if (game.canGo(dir)){
+            game.move(dir);
+        }
+        else{
+            game.displayMessage("Wanker!");
+        }
+        showStatus(game);
+    }
 
     @Override
     public int getAttack() {
@@ -68,5 +81,9 @@ public class Player implements IPlayer {
     @Override
     public int handleDamage(IGame game, IItem source, int amount) {
         return 0;
+    }
+
+    public void showStatus(IGame game){
+        game.displayStatus("NAme: " + getName() + ", Score: " + getCurrentHealth());
     }
 }

@@ -87,10 +87,10 @@ public class Main extends Application {
 		printer = screen.createPrinter();
 		painter = screen.createPainter();
 		printer.setTextMode(MAIN_TEXT_MODE, true);
-		
+
 		// Font with emojis – need separate download
 		// printer.setFont(Printer.FONT_SYMBOLA);
-		
+
 		if (grid)
 			printer.drawCharCells();
 		printer.setAutoScroll(false);
@@ -204,5 +204,5 @@ public class Main extends Application {
 			+ "#.......... ..................... ... .#\n" //
 			+ "#.......... ..................... ... .#\n" //
 			+ "########################################\n" //
-	;
+			;
 }

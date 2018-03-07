@@ -23,7 +23,7 @@ class PlayerTest {
 	;
 
 	@Test
-	void testPlayer1() {
+	void testNorth() {
 		// new game with our test map
 		Game game = new Game(TEST_MAP);
 		// pick (3,2) as the "current" position; this is where the player is on the
@@ -37,6 +37,16 @@ class PlayerTest {
 		player.keyPressed(game, KeyCode.UP);
 		// see that we moved north
 		assertEquals(loc.go(GridDirection.NORTH), game.getLocation());
+	}
+	@Test
+	void testWall() {
+
+		Game game = new Game(TEST_MAP);
+		IPlayer player = (IPlayer) game.setCurrent(3, 3);
+		ILocation loc = game.getLocation();
+		player.keyPressed(game, KeyCode.UP);
+		ILocation loc2 = game.getLocation();
+		assertEquals(loc, loc2);
 	}
 
 }
