@@ -91,7 +91,7 @@ public class Rabbit implements INonPlayer {
 
 	@Override
 	public int getMaxHealth() {
-		return 50;
+		return 50000;
 	}
 
 	@Override
