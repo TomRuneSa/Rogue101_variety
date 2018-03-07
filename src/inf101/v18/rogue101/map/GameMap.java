@@ -56,7 +56,14 @@ public class GameMap implements IGameMap {
 		// do the actual adding
 		List<IItem> list = grid.get(loc);
 		list.add(item);
-		// TODO: should be sorted!
+		Collections.sort(list);
+		Collections.reverse(list);
+
+		int comp = item.compareTo(list.get(0));
+		if(comp>0){
+			list.add(0, item);
+			return;
+		}
 	}
 
 	@Override

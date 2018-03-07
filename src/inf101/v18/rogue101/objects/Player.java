@@ -89,7 +89,7 @@ public class Player implements IPlayer {
 
     @Override
     public int getSize() {
-        return 0;
+        return 10;
     }
 
     @Override

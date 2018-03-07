@@ -143,7 +143,7 @@ public class Game implements IGame {
 				// first collect all the actors:
 				beginTurn();
 			}
-			if(random.nextInt(1000)<999){
+			if(random.nextInt(100)<10){
 				int xPos = random.nextInt(getWidth());
 				int yPos = random.nextInt(getHeight());
 				ILocation randomCarrot = map.getLocation(xPos, yPos);
@@ -252,7 +252,7 @@ public class Game implements IGame {
 			return new Wall();
 		case ".":
 			// TODO: add Dust
-			return null;
+			return new Dust();
 		case "R":
 			return new Rabbit();
 		case "C":
