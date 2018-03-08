@@ -2,11 +2,17 @@ package inf101.v18.rogue101.objects;
 
 import inf101.v18.gfx.gfxmode.ITurtle;
 import inf101.v18.grid.GridDirection;
+import inf101.v18.grid.ILocation;
+import inf101.v18.rogue101.examples.Carrot;
+import inf101.v18.rogue101.examples.Rabbit;
 import inf101.v18.rogue101.game.IGame;
 import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
 
+import java.util.List;
+
 public class Player implements IPlayer {
+    private IItem carryItem;
     private int hp = getMaxHealth();
     @Override
     public boolean draw(ITurtle painter, double w, double h) {
@@ -42,8 +48,35 @@ public class Player implements IPlayer {
        if (key == KeyCode.DOWN){
             tryToMove(game, GridDirection.SOUTH);
         }
-        showStatus(game);
+        if(key == KeyCode.Q){
+            List<IItem> list = game.getLocalItems();
+            if(carryItem!=null){
+                game.displayMessage("You have stuff");
+                return;
+            }
+            if(list.size()==0){
+                game.displayMessage("Nothing here");
+                return;
+            }
+            if(list.get(0) instanceof Dust){
+                return;
+            }
+            carryItem = list.get(0);
+            game.pickUp(list.get(0));
+        }
+        if(key == KeyCode.W){
+            if (carryItem == null){
+                game.displayMessage("You don't have stuff");
+                return;
+            }
+            ILocation loc = game.getLocation();
+            if (canDrop(loc)){
+                game.drop(carryItem);
+                carryItem = null;
+            }
 
+        }
+        showStatus(game);
     }
 
     public void tryToMove(IGame game, GridDirection dir) {
@@ -52,10 +85,15 @@ public class Player implements IPlayer {
             return;
         }
         else{
-            game.displayMessage("Wanker");
+            game.displayMessage("Well.. This does not work");
         }
     }
-
+public boolean canDrop(ILocation loc){
+        if(loc instanceof Carrot || loc instanceof Rabbit){
+            return false;
+        }
+return true;
+}
 
         @Override
     public int getAttack() {
@@ -103,7 +141,14 @@ public class Player implements IPlayer {
     }
 
     public void showStatus(IGame game){
-        game.displayStatus("NAme: " + getName() + ", Score: " + getCurrentHealth());
+
+        if(carryItem!= null){
+            game.displayStatus("Item in bag: " + carryItem.getArticle() + " "
+                    + carryItem.getName() + " Score: " + getCurrentHealth());
+        }
+        else{
+            game.displayStatus(" Score: " + getCurrentHealth());
+        }
     }
 
 }
