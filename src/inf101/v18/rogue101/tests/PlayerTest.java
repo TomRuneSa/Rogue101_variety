@@ -42,11 +42,14 @@ class PlayerTest {
 	void testWall() {
 
 		Game game = new Game(TEST_MAP);
-		IPlayer player = (IPlayer) game.setCurrent(3, 3);
+		IPlayer player = (IPlayer) game.setCurrent(3, 2);
+		player.keyPressed(game, KeyCode.UP);
 		ILocation loc = game.getLocation();
 		player.keyPressed(game, KeyCode.UP);
 		ILocation loc2 = game.getLocation();
-		assertEquals(loc, loc2);
+		if(loc != loc2){
+			fail("Something is wrgon");
+		}
 	}
 
 }
