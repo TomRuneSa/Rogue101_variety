@@ -58,9 +58,8 @@ public class Player implements IPlayer {
                 game.displayMessage("Nothing here");
                 return;
             }
-            if(list.get(0) instanceof Dust){
-                return;
-            }
+            if(list.get(0) instanceof Dust) {game.displayMessage("Nothing here"); return;}
+
             carryItem = list.get(0);
             game.pickUp(list.get(0));
         }
@@ -89,9 +88,7 @@ public class Player implements IPlayer {
         }
     }
 public boolean canDrop(ILocation loc){
-        if(loc instanceof Carrot || loc instanceof Rabbit){
-            return false;
-        }
+        if(loc instanceof Carrot || loc instanceof Rabbit) return false;
 return true;
 }
 
