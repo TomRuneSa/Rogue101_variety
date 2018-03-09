@@ -20,7 +20,7 @@ class PlayerTest {
 			+ "#.R@R...... ..........RC..R...... ... .#\n" //
 			+ "#... ..R........R......R. R........R.RR#\n" //
 			+ "########################################\n" //
-	;
+			;
 
 	@Test
 	void testNorth() {
@@ -30,7 +30,7 @@ class PlayerTest {
 		// test map, so it'll set up the player and return it
 		IPlayer player = (IPlayer) game.setCurrent(3, 2);
 
-		
+
 		// find players location
 		ILocation loc = game.getLocation();
 		// press "UP" key

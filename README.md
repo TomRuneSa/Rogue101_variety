@@ -22,15 +22,27 @@ Dette prosjektet inneholder [Semesteroppgave 1](SEM-1.md). Du kan også [lese op
    
 
 # Fyll inn egne svar/beskrivelse/kommentarer til prosjektet under
-* Levert av:   *NAVN* (*BRUKERNAVN*)
+* Levert av:   Tom Rune Saeveras (Yap006)
 * Del A: [ ] helt ferdig, [ ] delvis ferdig
 * Del B: [ ] helt ferdig, [ ] delvis ferdig
 * Del C: [ ] helt ferdig, [ ] delvis ferdig
 * [ ] hele semesteroppgaven er ferdig og klar til retting!
 
 # Del A
-## Svar på spørsmål
-* ...
+a) The state of objects that implements the different interfaces have their state defined by the paramters that are put into the different methods. For example, IGame is defined by the map it gets in, with IActors on said map.
+
+b)  It appears that between the interfaces, IItem is the connection. This returns all the different items that can be added and removed and exists in the map.    
+    
+c) IMapView is the ground pillar of the mapping itself, which contains all the basic things a map needs. IGameMap builds on the IMapView with some extra additions of spicy abilities. 
+
+d) I think iNonPlayer and IPlayer are different so we can separete objects that the user interacts with, and the objects that the programe deals with. This is mostly because the player gets his orders from the keyboard, and when you seperate players/non-players you don't risk them getting mixed up. 
+At first glance I wouldn't do it differently, but who knows, maybe I end up loathing it the more I work with it. 
+
+e) I think the implementation was fairly accurate based on my previous thoughts. You have both Rabbit and Carrot that are placed on a map. You between the two of them they both interfere with eachother, as the carrot is food for the rabbit as an item, and the rabit is a Non Player that doesn't get interference from the keyboard, and are looking for carrots to eat.
+
+f) THe rabbit finds out its position when it goeas through the local items in the map. Because the call returns things nearby the CURRENT location of the rabbit. This is also where it finds out what items that are on a certain spot. The legal moves of the rabit is decided when the rabbit looks for possible moves. All moves are legal as long as it's not a player or wall.
+
+g) The game knows there the rabbit is when it asks with the line "currentLocation = map.getLocation(currentActor);". This also lets the game know which rabbit asks for the location
 
 # Del B
 ## Svar på spørsmål

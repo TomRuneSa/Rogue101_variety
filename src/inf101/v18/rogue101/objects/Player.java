@@ -9,10 +9,11 @@ import inf101.v18.rogue101.game.IGame;
 import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Player implements IPlayer {
-    private IItem carryItem;
+    private List<IItem> carryItem = new ArrayList<>();
     private int hp = getMaxHealth();
     @Override
     public boolean draw(ITurtle painter, double w, double h) {
@@ -45,33 +46,37 @@ public class Player implements IPlayer {
         if (key == KeyCode.UP){
             tryToMove(game, GridDirection.NORTH);
         }
-       if (key == KeyCode.DOWN){
+        if (key == KeyCode.DOWN){
             tryToMove(game, GridDirection.SOUTH);
         }
         if(key == KeyCode.Q){
             List<IItem> list = game.getLocalItems();
-            if(carryItem!=null){
+           /* if(carryItem!=null){
                 game.displayMessage("You have stuff");
                 return;
-            }
+            }*/
             if(list.size()==0){
                 game.displayMessage("Nothing here");
                 return;
             }
             if(list.get(0) instanceof Dust) {game.displayMessage("Nothing here"); return;}
 
-            carryItem = list.get(0);
-            game.pickUp(list.get(0));
+            carryItem.add( game.pickUp(list.get(0)));
+
         }
         if(key == KeyCode.W){
-            if (carryItem == null){
+            if (carryItem.size() == 0){
                 game.displayMessage("You don't have stuff");
                 return;
             }
-            ILocation loc = game.getLocation();
-            if (canDrop(loc)){
-                game.drop(carryItem);
-                carryItem = null;
+
+            if (canDrop(game)){
+                game.drop(carryItem.get(0));
+                carryItem.remove(0);
+            }
+            else{
+                game.displayMessage("You can't drop stuff here ");
+                return;
             }
 
         }
@@ -87,12 +92,15 @@ public class Player implements IPlayer {
             game.displayMessage("Well.. This does not work");
         }
     }
-public boolean canDrop(ILocation loc){
-        if(loc instanceof Carrot || loc instanceof Rabbit) return false;
-return true;
-}
+    public boolean canDrop(IGame game){
+        if (game.getLocalItems().size() == 0) return true;
+        if(game.getLocalItems().get(0) instanceof Carrot || game.getLocalItems().get(0) instanceof Rabbit)
+            return false;
 
-        @Override
+        return true;
+    }
+
+    @Override
     public int getAttack() {
         return 0;
     }
@@ -138,14 +146,15 @@ return true;
     }
 
     public void showStatus(IGame game){
+        int carrots = 0;
+        for (int i = 0; i <carryItem.size() ; i++) {
+            if (carryItem.get(i) instanceof Carrot){
+                carrots++;
+            }
+        }
+        game.displayStatus("Amount of carrots: " + carrots + " Score: " + getCurrentHealth());
 
-        if(carryItem!= null){
-            game.displayStatus("Item in bag: " + carryItem.getArticle() + " "
-                    + carryItem.getName() + " Score: " + getCurrentHealth());
-        }
-        else{
-            game.displayStatus(" Score: " + getCurrentHealth());
-        }
+
     }
 
 }

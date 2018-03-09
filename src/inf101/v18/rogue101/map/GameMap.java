@@ -59,11 +59,11 @@ public class GameMap implements IGameMap {
 		Collections.sort(list);
 		Collections.reverse(list);
 
-		int comp = item.compareTo(list.get(0));
+		/*int comp = item.compareTo(list.get(0));
 		if(comp>0){
 			list.add(0, item);
 			return;
-		}
+		}*/
 	}
 
 	@Override
@@ -254,6 +254,8 @@ public class GameMap implements IGameMap {
 			throw new IllegalArgumentException();
 		else if (dist == 0)
 			return new ArrayList<>(); // empty!
+
+		loc.allNeighbours();
 
 		// TODO: implement this!
 		throw new UnsupportedOperationException();

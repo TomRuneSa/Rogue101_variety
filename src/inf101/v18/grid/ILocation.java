@@ -34,7 +34,7 @@ public interface ILocation extends IPosition {
 
 	/**
 	 * Iterate over neighbours in eight directions.
-	 * <p>
+	 * <p>f
 	 * (The iterator may yield fewer than eight locations if the current location is
 	 * at the edge of its containing area.
 	 * 
