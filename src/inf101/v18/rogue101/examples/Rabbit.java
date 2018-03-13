@@ -38,7 +38,6 @@ public class Rabbit implements INonPlayer {
 			}
 		}
 		// TODO: prøv forskjellige varianter her
-
 		List<GridDirection> possibleMoves = game.getPossibleMoves();
 		GridDirection carrot = null;
 		if(!possibleMoves.isEmpty()){

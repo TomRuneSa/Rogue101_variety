@@ -46,7 +46,7 @@ g) The game knows there the rabbit is when it asks with the line "currentLocatio
 
 # Del B
 ## Svar på spørsmål
-* ...
+
 
 # Del C
 ## Oversikt over designvalg og hva du har gjort
