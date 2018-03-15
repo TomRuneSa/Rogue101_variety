@@ -51,10 +51,6 @@ public class Player implements IPlayer {
         }
         if(key == KeyCode.Q){
             List<IItem> list = game.getLocalItems();
-           /* if(carryItem!=null){
-                game.displayMessage("You have stuff");
-                return;
-            }*/
             if(list.size()==0){
                 game.displayMessage("Nothing here");
                 return;
@@ -96,28 +92,27 @@ public class Player implements IPlayer {
         if (game.getLocalItems().size() == 0) return true;
         if(game.getLocalItems().get(0) instanceof Carrot || game.getLocalItems().get(0) instanceof Rabbit)
             return false;
-
         return true;
     }
 
     @Override
     public int getAttack() {
-        return 0;
+        return 10;
     }
 
     @Override
     public int getDamage() {
-        return 0;
+        return 10;
     }
 
     @Override
     public int getCurrentHealth() {
-        return 100;
+        return 10;
     }
 
     @Override
     public int getDefence() {
-        return 0;
+        return 1;
     }
 
     @Override
@@ -127,7 +122,7 @@ public class Player implements IPlayer {
 
     @Override
     public String getName() {
-        return null;
+        return "Player";
     }
 
     @Override
@@ -151,8 +146,9 @@ public class Player implements IPlayer {
             if (carryItem.get(i) instanceof Carrot){
                 carrots++;
             }
+
         }
-        game.displayStatus("Amount of carrots: " + carrots + " Score: " + getCurrentHealth());
+        game.displayStatus("Amount of carrots: " + carrots + " Score: " + getCurrentHealth() + getName());
 
 
     }

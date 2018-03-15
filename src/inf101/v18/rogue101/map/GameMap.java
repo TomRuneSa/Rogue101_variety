@@ -59,11 +59,7 @@ public class GameMap implements IGameMap {
         Collections.sort(list);
         Collections.reverse(list);
 
-		/*int comp = item.compareTo(list.get(0));
-		if(comp>0){
-			list.add(0, item);
-			return;
-		}*/
+
     }
 
     @Override
@@ -310,8 +306,10 @@ public class GameMap implements IGameMap {
         }
         return neighbours;
     }
-}
 
+
+
+}
 
 
 

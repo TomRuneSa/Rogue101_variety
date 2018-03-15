@@ -27,9 +27,9 @@ class GameMapTest {
 
         List<IItem> list = gameMap.getAll(location);
         if (list.get(0).getSize() < list.get(1).getSize()) {
-            fail("Not yet implemented");
+            fail("Not sorted correctly");
         } else if (list.get(1).getSize() < list.get(2).getSize()) {
-            fail("Not yet implemented1");
+            fail("Not sorted correctly");
         }
     }
 

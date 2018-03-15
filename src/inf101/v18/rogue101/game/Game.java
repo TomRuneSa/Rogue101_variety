@@ -112,13 +112,29 @@ public class Game implements IGame {
 
 	@Override
 	public ILocation attack(GridDirection dir, IItem target) {
-		ILocation loc = map.go(currentLocation, dir);
-		if (map.has(loc, target))
-			throw new IllegalMoveException("Target isn't there!");
+		ILocation loc = currentLocation.go(dir);
 
-		// TODO: implement attack
+		target = null;
+		for(IItem itm : getMap().getAll(loc)){
+		    if (itm instanceof IActor){
+		        target = itm;
+		        //goes through the items at the given location and checks if any of the items is actors that we can attack
+            }
+        }
+        if(target == null){
+		    throw new IllegalMoveException("These are not the droids you're looking for");
+        }
 
-		
+        boolean canDamage = currentActor.getAttack() + random.nextInt(20) +1 >= target.getDefence() + 10;
+		int damage = currentActor.getDamage();
+		if(canDamage){
+		    formatMessage("%s hits %s for %d damage ", currentActor.getName(), target.getName(), damage);
+		    target.handleDamage(this, currentActor, damage);
+        }
+        if (!canDamage){
+		    displayMessage("You can't attack this one");
+        }
+
 		map.clean(loc);
 
 		if (target.isDestroyed()) {
@@ -497,4 +513,6 @@ public class Game implements IGame {
 	public Random getRandom() {
 		return random;
 	}
+
+
 }

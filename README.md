@@ -45,9 +45,17 @@ f) THe rabbit finds out its position when it goeas through the local items in th
 g) The game knows there the rabbit is when it asks with the line "currentLocation = map.getLocation(currentActor);". This also lets the game know which rabbit asks for the location
 
 # Del B
-## Svar på spørsmål
+a) In the labs the cells and stuff have been handled by updating x and y coordinates. In this task we have only called upon a direction (north, south etc). This is much easier for me because you have made methods that handles the positioning on the board :) 
+
+b) Everything runs through game because this is the easiest way to keep controll over all objects in the map. It's easier for one class to keep track of everything, and that all the other classes can just call on that one boss-class. As far as I can tell there are no real disadvanteges, but the biggest advantage is that there's no need for all the classes to communicate directly with each other, all the communication happens through the board.
+
+c) When dropping stuff, there should be a check if the square that is going to have an item dropped on it, is free. I did this myself, but it should definitly be done.
+
+d) I still think the same of the questions from part A.
 
 
+
+As a comment in general of this task, I think the knowledge level required to do many of the tasks are to high based on what we have learned in earlier labs and in the lectures. Especially on he time limit and the amount of code we have to orient us-self in, Of course, this could just be me that thinks this, but I still think the level was to high for what we are supposed to have learned. 
 # Del C
 ## Oversikt over designvalg og hva du har gjort
 * ... blah, blah, er implementert i klassen [KurtMario](src/inf101/v18/rogue101/player/KurtMario.java), blah, blah `ITurtleShell` ...
