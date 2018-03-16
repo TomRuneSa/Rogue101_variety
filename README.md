@@ -55,6 +55,8 @@ d) I still think the same of the questions from part A.
 
 
 
+I have been discussing some of the solutions and ideas with Anton Ånedal. 
+
 As a comment in general of this task, I think the knowledge level required to do many of the tasks are to high based on what we have learned in earlier labs and in the lectures. Especially on he time limit and the amount of code we have to orient us-self in, Of course, this could just be me that thinks this, but I still think the level was to high for what we are supposed to have learned. 
 # Del C
 ## Oversikt over designvalg og hva du har gjort
